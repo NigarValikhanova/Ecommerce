@@ -8,11 +8,11 @@ using MediatR;
 
 namespace Catalog.Application.Handlers
 {
-    public class GetAllBrandHandler : IRequestHandler<GetAllBrandsQuery, IList<BrandResponse>>
+    public class GetAllBrandsHandler : IRequestHandler<GetAllBrandsQuery, IList<BrandResponse>>
     {
         public IBrandRepository _brandRepository { get; }
 
-        public GetAllBrandHandler(IBrandRepository brandRepository)
+        public GetAllBrandsHandler(IBrandRepository brandRepository)
         {
             _brandRepository = brandRepository;
         }
