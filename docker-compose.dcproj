@@ -4,7 +4,7 @@
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
     <DockerPublishLocally>False</DockerPublishLocally>
-    <ProjectGuid>8eb3ea6a-9221-465c-a73c-8868c0176dd4</ProjectGuid>
+    <ProjectGuid>c74b8fb7-b709-4076-b7f1-10d73746325b</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
     <DockerServiceName>catalog.api</DockerServiceName>
