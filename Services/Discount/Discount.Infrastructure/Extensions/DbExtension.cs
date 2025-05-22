@@ -44,6 +44,12 @@ namespace Discount.Infrastructure.Extensions
 
             cmd.ExecuteNonQuery();
 
+            cmd.CommandText = "INSERT INTO Coupon(ProductName, Description, Amount) VALUES('Adidas Quick Force Indoor Badminton Shoes', 'Shoe Discount', 500);";
+            cmd.ExecuteNonQuery();
+
+            cmd.CommandText = "INSERT INTO Coupon(ProductName, Description, Amount) VALUES('Yonex VCORE Pro 100 A Tennis Racquet(2700gm, Strung)', 'Racquet Discount', 700);";
+            cmd.ExecuteNonQuery();
+
         }
     }
 }
