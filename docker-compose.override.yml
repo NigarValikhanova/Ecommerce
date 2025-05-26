@@ -71,7 +71,7 @@ services:
     container_name: pgadmin
     environment:
       - PGADMIN_DEFAULT_EMAIL=admin@eCommerce.net
-      - PGADMIN_DEFAULT_PASWWORD=Password@1
+      - PGADMIN_DEFAULT_PASSWORD=Password@1
     restart: always
     ports:
       - "5050:80"
