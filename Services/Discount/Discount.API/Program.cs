@@ -2,6 +2,7 @@ using Discount.API.Services;
 using Discount.Application.Handlers;
 using Discount.Core.Repositories;
 using Discount.Infrastructure.Extensions;
+using Discount.Infrastructure.Repositories;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,7 +18,7 @@ var assemblies = new Assembly[]
     typeof(CreateDiscountCommandHandler).Assembly
 };
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(assemblies));
-builder.Services.AddScoped<IDiscountRepository, IDiscountRepository>();
+builder.Services.AddScoped<IDiscountRepository, DiscountRepository>();
 builder.Services.AddGrpc();
 
 var app = builder.Build();
@@ -31,7 +32,6 @@ if (app.Environment.IsDevelopment())
     app.UseDeveloperExceptionPage();
 }
 
-app.UseAuthorization();
 
 app.UseRouting();
 
