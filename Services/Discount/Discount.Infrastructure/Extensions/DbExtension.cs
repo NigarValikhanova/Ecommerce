@@ -32,7 +32,7 @@ namespace Discount.Infrastructure.Extensions
 
         private static void ApplyMigrations(IConfiguration config)
         {
-            using var connection = new NpgsqlConnection(config.GetValue<string>("DatabaseSettings:ConnectionSring"));
+            using var connection = new NpgsqlConnection(config.GetValue<string>("DatabaseSettings:ConnectionString"));
             connection.Open();
             using var cmd = new NpgsqlCommand()
             {
