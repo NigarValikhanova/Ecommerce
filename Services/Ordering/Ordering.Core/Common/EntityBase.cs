@@ -6,7 +6,7 @@
         public int Id { get; protected set; }
         //Below properties are Audit properties
         public string? CreatedBy { get; set; }
-        public DateTime? CreatedOn { get; set; }
+        public DateTime? CreatedDate { get; set; }
         public string? LastModifiedBy { get; set; }
         public DateTime? LastModifiedDate { get; set; }
     }
