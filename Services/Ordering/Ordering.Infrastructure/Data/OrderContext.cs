@@ -24,8 +24,8 @@ namespace Ordering.Infrastructure.Data
                         entry.Entity.CreatedBy = "nigar"; //TODO: Replace with auth server
                         break;
                     case EntityState.Modified:
-                        entry.Entity.CreatedDate = DateTime.Now;
-                        entry.Entity.CreatedBy = "nigar"; //TODO: Replace with auth server
+                        entry.Entity.LastModifiedDate = DateTime.Now;
+                        entry.Entity.LastModifiedBy = "nigar"; //TODO: Replace with auth server
                         break;
                            
                 }
